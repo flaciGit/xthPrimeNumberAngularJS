@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>xthPrimeNumber with AngularJS</title>
+
+        <script src="js/angular.min.js"></script>
+        <script src="js/appModel.js"></script>
+        <script src="js/appController.js"></script>
+    </head>
+    <body ng-app="xthPrimeApp" ng-controller="primeAppCtrl">
+        <h1>Giving the xth prime number:</h1>
+        <form ng-submit="primeFunction($event)">
+
+            <p>
+                Enter x:
+                <input type="number" name="xth" ng-model="x">
+                <input type="submit" value="givePrime">
+            </p>
+
+            <div>{{msg}}</div>
+        </form>
+        
+
+        
+    </body>
+</html>
